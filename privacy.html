@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy &mdash; rclone-personal</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666666;
+    --line: #e5e5e5;
+    --link: #2563eb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141414;
+      --fg: #ededed;
+      --muted: #9a9a9a;
+      --line: #2e2e2e;
+      --link: #7aa7ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 16px;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); margin: 0 0 32px; font-size: 0.9rem; }
+  h2 { font-size: 1.05rem; margin: 28px 0 8px; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-left: 20px; }
+  li { margin-bottom: 4px; }
+  a { color: var(--link); }
+  footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  footer a { margin-right: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="sub">rclone-personal &middot; Last updated: 18 September 2026</p>
+
+  <h2>Summary</h2>
+  <p>
+    rclone-personal is a private, single-user tool. It is operated by one
+    individual for their own use only. It has no other users, collects no
+    analytics, and transmits no data to any third party.
+  </p>
+
+  <h2>Data accessed</h2>
+  <p>
+    When authorised, the application uses the Google Drive API to read and write
+    files in the Google Drive account that granted the authorisation. It does
+    this in order to synchronise personal documents between that account and the
+    owner's own computer.
+  </p>
+  <p>The application does not request or receive access to any other Google service.</p>
+
+  <h2>Data storage</h2>
+  <ul>
+    <li>File contents are transferred directly between the owner's computer and Google's servers. They do not pass through any intermediate server.</li>
+    <li>The OAuth access and refresh tokens are stored locally in the rclone configuration file on the owner's computer. They are not transmitted anywhere else.</li>
+    <li>No database, log server, or remote storage is operated by this application.</li>
+  </ul>
+
+  <h2>Data sharing</h2>
+  <p>
+    No data is sold, shared, transferred, or disclosed to any third party for
+    any purpose. The application's use of information received from Google APIs
+    adheres to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>,
+    including the Limited Use requirements.
+  </p>
+
+  <h2>Retention and deletion</h2>
+  <p>
+    Because no data is collected or retained by the application, there is
+    nothing to delete on its side. Authorisation can be withdrawn at any time
+    at <a href="https://myaccount.google.com/permissions" rel="noopener">Google Account permissions</a>,
+    which immediately ends all access.
+  </p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy can be sent to the address listed on the project's Google Cloud contact record.</p>
+
+  <footer>
+    <a href="./index.html">Home</a>
+    <a href="./terms.html">Terms of Service</a>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rclone-personal</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666666;
+    --line: #e5e5e5;
+    --link: #2563eb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141414;
+      --fg: #ededed;
+      --muted: #9a9a9a;
+      --line: #2e2e2e;
+      --link: #7aa7ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 16px;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); margin: 0 0 32px; }
+  h2 { font-size: 1.05rem; margin: 32px 0 8px; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-left: 20px; }
+  li { margin-bottom: 4px; }
+  a { color: var(--link); }
+  footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  footer a { margin-right: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>rclone-personal</h1>
+  <p class="sub">A personal, single-user backup utility.</p>
+
+  <h2>What this is</h2>
+  <p>
+    rclone-personal is a private configuration of
+    <a href="https://rclone.org/" rel="noopener">rclone</a>, an open-source
+    command-line file synchronisation tool. It is used by its owner to back up
+    personal notes and documents from a local computer to that same person's
+    own Google Drive account.
+  </p>
+
+  <h2>Who can use it</h2>
+  <p>
+    Only the owner. This is not a public service, it has no user accounts, and
+    it is not distributed to anyone else. It exists solely so that its owner can
+    authorise rclone against their own Google Drive using their own API
+    credentials rather than shared ones.
+  </p>
+
+  <h2>What it accesses</h2>
+  <ul>
+    <li>Google Drive files belonging to the account that authorises it</li>
+    <li>Nothing else &mdash; no contacts, no mail, no calendar, no other account</li>
+  </ul>
+  <p>
+    Access can be revoked at any time from
+    <a href="https://myaccount.google.com/permissions" rel="noopener">Google Account permissions</a>.
+  </p>
+
+  <footer>
+    <a href="./privacy.html">Privacy Policy</a>
+    <a href="./terms.html">Terms of Service</a>
+  </footer>
+</main>
+</body>
+</html>
